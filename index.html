@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="div">aaaaa</div>
+   <script>
+   var url = location.search; //包括问号;
+   if (url.indexOf("?") !=-1) {
+    url.substr(1);
+   }   //去掉问号；若数据是被 JSON.stringify()方法处理过的需要用 JSON.parse()处理回来;
+     alert(url);
+   </script> 
+</body>
+</html>
