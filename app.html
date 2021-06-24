@@ -38,10 +38,10 @@
 			if (r != null && r[2] != "")return unescape(r[2]);
 			return null;
 		}
-		var url = location.search.substr(1);
-		var title=getUrlQueryString('title',BASE64.decode(url));
+		var geturl=getUrlQueryString('geturl');
+		var title=getUrlQueryString('title',BASE64.decode(geturl));
 		document.getElementsByTagName("title")[0].innerText = title;
-		document.getElementById('myIframe').src = BASE64.decode(url);	
+		document.getElementById('myIframe').src = BASE64.decode(geturl);	
 	</script>
 </body>
 </html>
